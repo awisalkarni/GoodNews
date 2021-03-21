@@ -3,23 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E488C4431E7A46D4C7C4B549 /* Pods_GoodNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA46F79C1549EDC1110134C /* Pods_GoodNews.framework */; };
+		EF0A27742606C19C0034079E /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A27732606C19C0034079E /* URLRequest+Extensions.swift */; };
 		EF101F982605E7C700BA8A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF101F972605E7C700BA8A73 /* AppDelegate.swift */; };
 		EF101F9A2605E7C700BA8A73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF101F992605E7C700BA8A73 /* SceneDelegate.swift */; };
 		EF101F9F2605E7C700BA8A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF101F9D2605E7C700BA8A73 /* Main.storyboard */; };
 		EF101FA12605E7C800BA8A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF101FA02605E7C800BA8A73 /* Assets.xcassets */; };
 		EF101FA42605E7C800BA8A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF101FA22605E7C800BA8A73 /* LaunchScreen.storyboard */; };
 		EF101FAE2605E82E00BA8A73 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF101FAD2605E82E00BA8A73 /* NewsTableViewController.swift */; };
+		EFCCFB182605F5C6008C43BF /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCFB172605F5C6008C43BF /* Article.swift */; };
+		EFCCFB1C2605F7FC008C43BF /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCFB1B2605F7FC008C43BF /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03824DB641EF756708693F77 /* Pods-GoodNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNews.debug.xcconfig"; path = "Target Support Files/Pods-GoodNews/Pods-GoodNews.debug.xcconfig"; sourceTree = "<group>"; };
 		24600CBE82759E932E0E91E7 /* Pods-GoodNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNews.release.xcconfig"; path = "Target Support Files/Pods-GoodNews/Pods-GoodNews.release.xcconfig"; sourceTree = "<group>"; };
 		4EA46F79C1549EDC1110134C /* Pods_GoodNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0A27732606C19C0034079E /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 		EF101F942605E7C700BA8A73 /* GoodNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF101F972605E7C700BA8A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF101F992605E7C700BA8A73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		EF101FA32605E7C800BA8A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF101FA52605E7C800BA8A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF101FAD2605E82E00BA8A73 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		EFCCFB172605F5C6008C43BF /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		EFCCFB1B2605F7FC008C43BF /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 				03824DB641EF756708693F77 /* Pods-GoodNews.debug.xcconfig */,
 				24600CBE82759E932E0E91E7 /* Pods-GoodNews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +63,14 @@
 				4EA46F79C1549EDC1110134C /* Pods_GoodNews.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF0A27722606C18B0034079E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF0A27732606C19C0034079E /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EF101F8B2605E7C700BA8A73 = {
@@ -81,6 +94,9 @@
 		EF101F962605E7C700BA8A73 /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				EF0A27722606C18B0034079E /* Extensions */,
+				EFCCFB1A2605F7F0008C43BF /* Cells */,
+				EFCCFB162605F56B008C43BF /* Models */,
 				EF101F972605E7C700BA8A73 /* AppDelegate.swift */,
 				EF101F992605E7C700BA8A73 /* SceneDelegate.swift */,
 				EF101FAD2605E82E00BA8A73 /* NewsTableViewController.swift */,
@@ -90,6 +106,22 @@
 				EF101FA52605E7C800BA8A73 /* Info.plist */,
 			);
 			path = GoodNews;
+			sourceTree = "<group>";
+		};
+		EFCCFB162605F56B008C43BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFCCFB172605F5C6008C43BF /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFCCFB1A2605F7F0008C43BF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFCCFB1B2605F7FC008C43BF /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCCFB1C2605F7FC008C43BF /* ArticleTableViewCell.swift in Sources */,
+				EFCCFB182605F5C6008C43BF /* Article.swift in Sources */,
 				EF101F982605E7C700BA8A73 /* AppDelegate.swift in Sources */,
+				EF0A27742606C19C0034079E /* URLRequest+Extensions.swift in Sources */,
 				EF101F9A2605E7C700BA8A73 /* SceneDelegate.swift in Sources */,
 				EF101FAE2605E82E00BA8A73 /* NewsTableViewController.swift in Sources */,
 			);
